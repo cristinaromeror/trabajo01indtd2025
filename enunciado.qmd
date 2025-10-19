@@ -1,5 +1,47 @@
 ---
-title: "enunciado"
-format: html
-editor: visual
+title: "Enunciado Trabajo 1"
+lang: "es"
+format: 
+    html:
+        toc: true
+    typst: 
+        toc: true
+        papersize: a4
+        margin: {x: 1.75cm, y: 1.5cm}
+        fig-align: center
+        fig-format: png
+    pdf: 
+        toc: true
+execute:
+    cache: false
 ---
+
+1. Aplicar los criterios de decisión bajo incertidumbre a la siguiente tabla de decisión, tanto en situación favorable como desfavorable:
+
+|     | e1  | e2  | e3  | e4  | e5  | e6  |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| a1  |  9  |  7  |  3  |  2  |  6  |  1  |
+| a2  | 12  |  6  |  1  |  2  |  8  |  3  |
+| a3  |  8  |  6  |  2  |  3  |  5  |  4  |
+| a4  |  5  |  4  |  3  |  3  |  5  |  4  |
+| a5  |  7  |  6  |  2  |  2  |  6  |  5  |
+
+
+
+2. Cristina está analizando la posibilidad de contratar un suministro de electricidad con una empresa privada. Se ha informado sobre tres compañías, que le han dado las siguientes condiciones:
+
+-   Electra Viva: cobra una tarifa fija de 40 € al mes, independientemente del consumo.
+
+-   LuzSolar: cobra una tarifa base de 25 € al mes, pero si el consumo supera los 300 kWh mensuales, aplica un suplemento de 0,20 € por cada kWh adicional.
+
+-   EcoVolt: cobra una tarifa base de 30 € al mes, y además ofrece un descuento del 20 % en la factura total si el mes es soleado debido a sus paneles solares.
+
+Cristina trabaja desde casa y, según el tipo de invierno que se presente, su consumo puede variar notablemente:
+
+-   Si el invierno es suave, consume unos 250 kWh/mes.
+
+-   Si el invierno es duro, su consumo sube a 400 kWh/mes.
+
+-   Si el invierno es soleado podría beneficiarse del descuento de EcoVolt.
+
+Sabiendo que el precio medio del kWh es 0,25 €, Cristina quiere elegir la mejor compañía evaluando el coste total del suministro durante los próximos 6 meses, pero sin saber con certeza qué tipo de invierno tendrá.
