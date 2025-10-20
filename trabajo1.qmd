@@ -240,7 +240,7 @@ m11 <- (40+(250*0.25))*6 # d1, e1
 m12 <- (40+(400*0.25))*6# d1, e2
 m13 <- (40+(300*0.25))*6# d1, e3
 m21 <- (25+(250*0.25))*6 # d2, e1
-m22 <- (25+(400*0.25))*6 # d2, e2
+m22 <- (25+(400*0.25)+(100*0.20))*6 # d2, e2
 m23 <- (25+(300*0.25))*6 # d2, e2
 m31 <- (30+(250*0.25))*6 # d3, e1
 m32 <- (30+(400*0.25))*6 # d3, e2
@@ -255,4 +255,4 @@ m2
 
 criterio.Todos(m2,alfa = 0.5,favorable = F)
 ```
-La mejor decisión sería contratar la compañía EcoVolt ya que es la alternativa óptima en la mayoría de los criterios.
+La mejor decisión sería contratar la compañía EcoVolt ya que es la alternativa óptima en la todos los criterios.
