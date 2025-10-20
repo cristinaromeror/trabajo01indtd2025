@@ -16,7 +16,23 @@ execute:
     cache: false
 ---
 
-1. Aplicar los criterios de decisión bajo incertidumbre a la siguiente tabla de decisión, tanto en situación favorable como desfavorable:
+1. Una compañía tecnológica está valorando cinco estrategias para el lanzamiento de un nuevo teléfono inteligente. Dado que el mercado es muy incierto, se han definido seis posibles escenarios que reflejan distintas condiciones del entorno competitivo y económico.
+
+Los escenarios considerados son:
+
+e₁: Alta demanda y poca competencia.
+
+e₂: Demanda estable y competencia moderada.
+
+e₃: Aparición de nuevos competidores con precios bajos.
+
+e₄: Disminución del poder adquisitivo de los consumidores.
+
+e₅: Aceptación favorable por parte de los medios y clientes.
+
+e₆: Aumento de los costes de producción y distribución.
+
+La empresa estima las ganancias esperadas (en millones de euros) para cada estrategia bajo cada escenario:
 
 |     | e1  | e2  | e3  | e4  | e5  | e6  |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -26,7 +42,7 @@ execute:
 | a4  |  5  |  4  |  3  |  3  |  5  |  4  |
 | a5  |  7  |  6  |  2  |  2  |  6  |  5  |
 
-
+¿Cuál sería la opción que usted le recomendaría a la compañía?
 
 2. Cristina está analizando la posibilidad de contratar un suministro de electricidad con una empresa privada. Se ha informado sobre tres compañías, que le han dado las siguientes condiciones:
 
