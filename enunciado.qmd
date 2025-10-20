@@ -1,19 +1,8 @@
 ---
 title: "Enunciado Trabajo 1"
 lang: "es"
-format: 
-    html:
-        toc: true
-    typst: 
-        toc: true
-        papersize: a4
-        margin: {x: 1.75cm, y: 1.5cm}
-        fig-align: center
-        fig-format: png
-    pdf: 
-        toc: true
-execute:
-    cache: false
+format: html
+editor: visual
 ---
 
 1. Una compañía tecnológica está valorando cinco estrategias para el lanzamiento de un nuevo teléfono inteligente. Dado que el mercado es muy incierto, se han definido seis posibles escenarios que reflejan distintas condiciones del entorno competitivo y económico.
