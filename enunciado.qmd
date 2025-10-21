@@ -21,7 +21,7 @@ e₅: Aceptación favorable por parte de los medios y clientes.
 
 e₆: Aumento de los costes de producción y distribución.
 
-La empresa estima las ganancias esperadas (en millones de euros) para cada estrategia bajo cada escenario:
+La tabla siguiente muestra los valores estimados (en millones de euros) para cada estrategia y escenario:
 
 |     | e1  | e2  | e3  | e4  | e5  | e6  |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -31,11 +31,11 @@ La empresa estima las ganancias esperadas (en millones de euros) para cada estra
 | a4  |  5  |  4  |  3  |  3  |  5  |  4  |
 | a5  |  7  |  6  |  2  |  2  |  6  |  5  |
 
-¿Cuál sería la opción que usted le recomendaría a la compañía?
+¿Cuál sería la opción que usted le recomendaría a la compañía si los valores fuesen ganancias? ¿Y si fuesen costes?
 
 2. Cristina está analizando la posibilidad de contratar un suministro de electricidad con una empresa privada. Se ha informado sobre tres compañías, que le han dado las siguientes condiciones:
 
--   Electra Viva: cobra una tarifa fija de 40 € al mes, independientemente del consumo.
+-   Electra Viva: cobra una tarifa base de 40 € al mes, más el consumo.
 
 -   LuzSolar: cobra una tarifa base de 25 € al mes, pero si el consumo supera los 300 kWh mensuales, aplica un suplemento de 0,20 € por cada kWh adicional.
 

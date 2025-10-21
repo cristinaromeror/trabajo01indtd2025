@@ -33,7 +33,9 @@ source("teoriadecision_funciones_incertidumbre.R",encoding="UTF-8")
 | **d4** | **5**  | **4**  | **3**  | **3**  | **5**  | **4**  |
 | **d5** | **7**  | **6**  | **2**  | **2**  | **6**  | **5**  |
 
-**a) Situación favorable**
+**¿Cuál sería la opción que usted le recomendaría a la compañía si los valores fuesen ganancias? ¿Y si fuesen costes?**
+
+**a) Situación favorable (ganancias)**
 
 ```{r}
 m1A <- crea.tablaX(c(9,7,3,2,6,1,
@@ -51,7 +53,7 @@ sol1a_W <- criterio.Wald(m1A, favorable = TRUE)
 sol1a_W
 ```
 
-La mejor alternativa según el criterio de Wald es la “d4” siendo el valor óptimo el 3.
+La mejor alternativa según el criterio de Wald es la “d4”.
 
 -   Criterio Optimista:
 
@@ -60,16 +62,16 @@ sol1a_O <- criterio.Optimista(m1A)
 sol1a_O
 ```
 
-La mejor alternativa según el criterio Optimista es la “d2” siendo el valor óptimo el 12.
+La mejor alternativa según el criterio Optimista es la “d2”.
 
 -   Criterio de Hurwicz:
 
 ```{r}
-sol1a_H <- criterio.Hurwicz(m1A, alfa = 0.5, favorable = TRUE)
+sol1a_H <- criterio.Hurwicz(m1A, favorable = TRUE)
 sol1a_H
 ```
 
-La mejor alternativa según el criterio de Hurwicz es la “d2” siendo el valor óptimo el 6.5.
+La mejor alternativa según el criterio de Hurwicz es la “d2”.
 
 -   Criterio Savage:
 
@@ -78,7 +80,7 @@ sol1a_S <- criterio.Savage(m1A)
 sol1a_S
 ```
 
-La mejor alternativa según el criterio de Savage es la “d2” siendo el valor óptimo el 2.
+La mejor alternativa según el criterio de Savage es la “d2”.
 
 -   Criterio de Laplace:
 
@@ -87,7 +89,7 @@ sol1a_L <- criterio.Laplace(m1A)
 sol1a_L
 ```
 
-La mejor alternativa según el criterio de Laplace es la “d2” siendo el valor óptimo el 5.333333.
+La mejor alternativa según el criterio de Laplace es la “d2”.
 
 -   Criterio de Punto ideal:
 
@@ -96,11 +98,11 @@ sol1a_PI <- criterio.PuntoIdeal(m1A, favorable = TRUE)
 sol1a_PI
 ```
 
-La mejor alternativa según el criterio de Punto Ideal es la “d2” siendo el valor óptimo el 3.162278.
+La mejor alternativa según el criterio de Punto Ideal es la “d2”.
 
 Según el criterio Optimista, Hurwicz, Savage, LaPlace y el Punto Ideal, la mejor opción seria "d2". Sin embargo, según el criterio de Wald la mejor opción es el "d4." Entonces, la mayoría de criterios eligen "d2", la opción final es la estrategia 2.
 
-**a) Situación desfavorable**
+**b) Situación desfavorable (costes)**
 
 -   Criterio de Wald:
 
@@ -109,7 +111,7 @@ sol1b_W <- criterio.Wald(m1A, favorable = FALSE)
 sol1b_W
 ```
 
-La mejor alternativa según el criterio de Wald es la “d4” siendo el valor óptimo el 5.
+La mejor alternativa según el criterio de Wald es la “d4”.
 
 -   Criterio Optimista:
 
@@ -118,16 +120,16 @@ sol1b_O <- criterio.Optimista(m1A, favorable = F)
 sol1b_O
 ```
 
-La mejor alternativa según el criterio Optimista es la “d1” y “d2” siendo el valor óptimo el 1.
+La mejor alternativa según el criterio Optimista es la “d1” o “d2”.
 
 -   Criterio de Hurwicz:
 
 ```{r}
-sol1b_H <- criterio.Hurwicz(m1A, alfa = 0.5, favorable = F)
+sol1b_H <- criterio.Hurwicz(m1A, favorable = F)
 sol1b_H
 ```
 
-La mejor alternativa según el criterio de Hurwicz es la “d4” siendo el valor óptimo el 4.
+La mejor alternativa según el criterio de Hurwicz es la “d4”.
 
 -   Criterio Savage:
 
@@ -136,7 +138,7 @@ sol1b_S <- criterio.Savage(m1A, favorable = F)
 sol1b_S
 ```
 
-La mejor alternativa según el criterio de Savage es la “d3” y “d4” siendo el valor óptimo el 3.
+La mejor alternativa según el criterio de Savage es la “d3” o “d4”.
 
 -   Criterio de Laplace:
 
@@ -145,7 +147,7 @@ sol1b_L <- criterio.Laplace(m1A, favorable = F)
 sol1b_L
 ```
 
-La mejor alternativa según el criterio de Laplace es la “d4” siendo el valor óptimo el 4.
+La mejor alternativa según el criterio de Laplace es la “d4”.
 
 -   Criterio de Punto ideal:
 
@@ -154,13 +156,13 @@ sol1b_PI <- criterio.PuntoIdeal(m1A, favorable = F)
 sol1b_PI
 ```
 
-La mejor alternativa según el criterio de Punto Ideal es la “d4” siendo el valor óptimo el 4.
+La mejor alternativa según el criterio de Punto Ideal es la “d4”.
 
-Según el criterio Optimista la mejor opción seria "d2". Sin embargo, el resto de criterios escogen como la mejor estrategia la numero 4. Por tanto, la estrategia que debe tomar la compañía es la 4.
+Según el criterio Optimista la mejor opción seria "d1" o "d2". Sin embargo, el resto de criterios coinciden escogiendo como la mejor estrategia la número 4. Por tanto, la estrategia que debe tomar la compañía es la 4.
 
 #### **2. Cristina está analizando la posibilidad de contratar un suministro de electricidad con una empresa privada. Se ha informado sobre tres compañías, que le han dado las siguientes condiciones:**
 
--   **Electra Viva: cobra una tarifa fija de 40 € al mes, independientemente del consumo.**
+-   **Electra Viva: cobra una tarifa base de 40 € al mes, más el consumo.**
 
 -   **LuzSolar: cobra una tarifa base de 25 € al mes, pero si el consumo supera los 300 kWh mensuales, aplica un suplemento de 0,20 € por cada kWh adicional.**
 
@@ -212,19 +214,17 @@ Planteamiento:
 
         -   x2,1 =(25+(250*0.25))*6=525
 
-        -   x2,2 =(25+(400*0.25)+(100*0.20))\*6=870
+        -   x2,2 =(25+(400*0.25)+(100*0.20))*6=870
 
         -   x2,3 =(25+(300*0.25))*6=600
 
     -   Alternativa d3:
 
-    ```         
-    -   x3,1 =(30+(250*0.25))*6=555
-
-    -   x3,2 =(30+(400*0.25))*6=780
-
-    -   x3,3 =(30+(300*0.25))*6*0.8=504
-    ```
+      -   x3,1 =(30+(250*0.25))*6=555
+  
+      -   x3,2 =(30+(400*0.25))*6=780
+  
+      -   x3,3 =(30+(300*0.25))*6*0.8=504
 
 ```{r}
 m11 <- (40+(250*0.25))*6 # d1, e1
@@ -244,7 +244,7 @@ m2 <- crea.tablaX(c(m11,m12,m13,
                     nb_estados = c("invierno suave","invierno duro", "invierno soleado"))
 m2
 
-criterio.Todos(m2,alfa = 0.5,favorable = F)
+criterio.Todos(m2,favorable = F)
 ```
 
-La mejor decisión sería contratar la compañía EcoVolt ya que es la alternativa óptima en la todos los criterios.
+La mejor decisión sería contratar la compañía EcoVolt ya que es la alternativa óptima en todos los criterios.
